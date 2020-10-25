@@ -2,14 +2,15 @@ import XCTest
 @testable import TiledResources
 
 final class TiledResourcesTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(TiledResources().text, "Hello, World!")
+    func testGenericTiledProject() {
+        do {
+            XCTAssertTrue(try Projects.genericTiled.url.checkPromisedItemIsReachable())
+        } catch {
+            XCTFail("Test failed: \(error)")
+        }
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testExample", testGenericTiledProject),
     ]
 }
