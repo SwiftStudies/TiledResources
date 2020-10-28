@@ -27,7 +27,7 @@
  </layer>
  <group id="4" name="Group" locked="1">
   <imagelayer id="5" name="Grouped Image Layer" offsetx="72" offsety="96">
-   <image source="../Images/Individual/F.png"/>
+   <image source="../Images/F.png" width="16" height="16"/>
   </imagelayer>
  </group>
  <layer id="1" name="Tile Layer" width="10" height="10" locked="1">
