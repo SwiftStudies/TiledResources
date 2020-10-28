@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="16">
+ <properties>
+  <property name="Boolean Property" type="bool" value="true"/>
+  <property name="Color Property" type="color" value="#ff0f80ff"/>
+  <property name="File Property" type="file" value="Test Map 1.tmx"/>
+  <property name="Float Property" type="float" value="42.1"/>
+  <property name="Int Property" type="int" value="42"/>
+  <property name="Object Property" type="object" value="3"/>
+  <property name="String Property" value="Test"/>
+ </properties>
+ <tileset firstgid="1" source="../Tilesets/Top Down [Sheet M-0 S-0].tsx"/>
+ <tileset firstgid="17" source="../Tilesets/Animation.tsx"/>
+ <layer id="6" name="Tile Layer 2" width="10" height="10" locked="1">
+  <data encoding="csv">
+2,2,2,2,2,2,2,2,2,2,
+2,0,0,0,0,0,0,0,0,2,
+2,0,1,1,1,1,1,1,0,2,
+2,0,1,0,0,0,0,1,0,2,
+2,0,1,0,3,3,0,1,0,2,
+2,0,1,0,3,3,0,1,0,2,
+2,0,1,0,0,0,0,1,0,2,
+2,0,1,1,1,1,1,1,0,2,
+2,0,0,0,0,0,0,0,0,2,
+2,2,2,2,2,2,2,2,2,2
+</data>
+ </layer>
+ <group id="4" name="Group" locked="1">
+  <imagelayer id="5" name="Grouped Image Layer" offsetx="72" offsety="96">
+   <image source="../Images/Individual/F.png"/>
+  </imagelayer>
+ </group>
+ <layer id="1" name="Tile Layer" width="10" height="10" locked="1">
+  <data encoding="csv">
+5,6,6,6,6,6,6,6,6,7,
+9,2,2,2,2,2,2,2,2,11,
+9,2,5,6,6,6,6,7,2,11,
+9,2,9,1,1,1,1,11,2,11,
+9,2,9,1,5,7,1,11,2,11,
+9,2,9,1,13,15,1,11,2,11,
+9,2,9,1,1,1,1,11,2,11,
+9,2,13,14,14,14,14,15,2,11,
+9,2,2,2,2,2,2,2,2,11,
+13,14,14,14,14,14,14,14,14,15
+</data>
+ </layer>
+ <objectgroup id="2" name="Object Layer">
+  <object id="1" name="Elipse" x="32" y="32" width="96" height="96" rotation="45">
+   <ellipse/>
+  </object>
+  <object id="3" name="Point" x="48.1427" y="16.6189">
+   <point/>
+  </object>
+  <object id="4" name="Rectangle" x="127.663" y="15.9443" width="15.9969" height="15.9371"/>
+  <object id="5" name="Polygon" x="134.554" y="55.2275">
+   <polygon points="-6.72727,-22.9091 9.90394,25.0631 -7.06406,72.6562 -54.4392,83.3433 -102.492,72.678 -117.953,24.9133 -101.939,-23.2511 -86.6368,-23.2501 -86.5524,-38.9454 -22.1832,-39.1551 -22.1427,-23.2067"/>
+  </object>
+  <object id="6" name="Text" x="65.396" y="147.539" width="31.5087" height="8.20547">
+   <properties>
+    <property name="showTextNodePath" type="bool" value="false"/>
+   </properties>
+   <text fontfamily="Courier New" pixelsize="8" wrap="1" color="#20ffff" kerning="0">Bottom</text>
+  </object>
+  <object id="7" name="Tile" gid="10" x="13.2425" y="40.4335" width="16" height="16" rotation="45"/>
+  <object id="8" name="Polyline" x="106.689" y="23.3462">
+   <polyline points="6,8.36364 13.4691,-7.22833 20.3524,8.75209"/>
+  </object>
+  <object id="13" gid="21" x="96" y="63.8182" width="16" height="16"/>
+  <object id="14" gid="25" x="48.3636" y="64.1818" width="16" height="16"/>
+  <object id="15" gid="17" x="48.1818" y="112.182" width="16" height="16"/>
+ </objectgroup>
+ <imagelayer id="3" name="Image Layer" locked="1" offsetx="72" offsety="48">
+  <image source="../Images/Test Card 16x16.png" width="16" height="16"/>
+ </imagelayer>
+ <group id="7" name="Translating Group" locked="1" offsetx="80" offsety="80">
+  <layer id="8" name="Translated Tiles" width="10" height="10" locked="1">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,15,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <objectgroup id="9" name="Translated Objects" locked="1">
+   <object id="9" x="24" y="24">
+    <point/>
+   </object>
+   <object id="10" x="32" y="32" width="16" height="16" rotation="180">
+    <text fontfamily="Arial" pixelsize="8" color="#fd66ff" halign="center" valign="center">Top</text>
+   </object>
+   <object id="11" x="32" y="64">
+    <polygon points="0,0 0,-31.3794 27.6139,-31.8815 31.3794,-28.8691 31.6305,-0.251036"/>
+   </object>
+   <object id="12" gid="10" x="16" y="48" width="16" height="32" rotation="90"/>
+  </objectgroup>
+ </group>
+</map>
