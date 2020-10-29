@@ -115,6 +115,7 @@ public struct TiledResources {
             }
             case topDown2D = "2D Top Down.tmx", isometric = "Isometric.tmx", testMap1 = "Test Map 1.tmx", testMap2 = "Test Map 2.tmx"
             case oneOfEverything = "One of Everything.tmx"
+            case base64 = "Base64.tmx",base64zlib="Base64zlib.tmx",base64zstandard="Base64zstandard.tmx"
         }
         
         public enum TileSets : String, CaseIterable, ResourceContainer, TileSetResource {
