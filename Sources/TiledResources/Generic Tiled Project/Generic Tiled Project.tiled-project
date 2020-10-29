@@ -1,6 +1,16 @@
 {
     "automappingRulesFile": "",
     "commands": [
+        {
+            "arguments": "",
+            "command": "ls",
+            "enabled": true,
+            "name": "List",
+            "saveBeforeExecute": true,
+            "shortcut": null,
+            "showOutput": true,
+            "workingDirectory": ""
+        }
     ],
     "extensionsPath": "extensions",
     "folders": [
@@ -8,5 +18,5 @@
         "Maps",
         "Tilesets"
     ],
-    "objectTypesFile": ""
+    "objectTypesFile": "Object Types.xml"
 }
