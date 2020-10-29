@@ -4,7 +4,7 @@ import XCTest
 final class TiledResourcesTests: XCTestCase {
     func testGenericTiledProject() {
         do {
-            XCTAssertTrue(try Projects.genericTiled.url.checkPromisedItemIsReachable())
+            XCTAssertTrue(try TiledResources.GenericTiledProject.projectFile.url.checkPromisedItemIsReachable())
         } catch {
             XCTFail("Test failed: \(error)")
         }
