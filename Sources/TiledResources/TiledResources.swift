@@ -67,6 +67,37 @@ public extension Resource where Self : RawRepresentable, Self.RawValue == String
 public struct TiledResources {
     public static let rootURL = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
     
+    public struct SpriteKit : ResourceContainer {
+        public static var url : URL {
+            return TiledResources.rootURL.appendingPathComponent("SpriteKit")
+        }        
+
+        public static let projectFile : Resource = ResourceInstance(url: url.appendingPathComponent("SpriteKit.tiled-project"))
+        public static let objectTypesFile : Resource = ResourceInstance(url: url.appendingPathComponent("Object Types.xml"))
+
+        public enum Maps : String, CaseIterable, ResourceContainer, MapResource {
+            public static var project: ResourceContainer.Type {
+                return SpriteKit.self
+            }
+            public static var url : URL {
+                return SpriteKit.url.appendingPathComponent("Maps")
+            }
+            case lightTest = "Light Test.tmx", readyPlayerOne = "Ready Player 1.tmx", topDownScroller = "Top Down Scroller.tmx"
+        }
+        
+        public enum TileSets : String, CaseIterable, ResourceContainer, TileSetResource {
+            public static var project: ResourceContainer.Type {
+                return SpriteKit.self
+            }
+            
+            public static var url : URL {
+                return SpriteKit.url.appendingPathComponent("Tilesets")
+            }
+            case dungeon = "Dungeon.tsx"
+        }        
+
+    }
+    
     public struct GenericTiledProject : ResourceContainer {
         public static var url : URL {
             return TiledResources.rootURL.appendingPathComponent("Generic Tiled Project")
