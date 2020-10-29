@@ -15,35 +15,35 @@
 import Foundation
 
 #warning("Temporary Solution until https://bugs.swift.org/browse/SR-13714 is fixed and I can reference TiledResources from here")
-protocol ResourceContainer {
+public protocol ResourceContainer {
     static var url : URL { get }
 }
 
-protocol ProjectResource {
+public protocol ProjectResource {
     static var project : ResourceContainer.Type { get }
 }
 
-protocol Resource {
+public protocol Resource {
     var url : URL { get }
 }
 
-protocol TileSetResource : Resource, ProjectResource {
+public protocol TileSetResource : Resource, ProjectResource {
 }
 
-protocol MapResource : Resource, ProjectResource {
+public protocol MapResource : Resource, ProjectResource {
     
 }
 
 #if canImport(TiledKit)
 import TiledKit
 
-extension TileSetResource {
+public extension TileSetResource {
     func load<O:TileSet>() throws -> O {
         return try Project(at: Self.project.url).retrieve(asType: O.self, from: url)
     }
 }
 
-extension MapResource {
+public extension MapResource {
     func load() throws -> Map {
         return try Project(at: Self.project.url).retrieve(asType: Map.self, from: url)
     }
@@ -58,40 +58,40 @@ fileprivate struct ResourceInstance : Resource{
     var url : URL
 }
 
-extension Resource where Self : RawRepresentable, Self.RawValue == String, Self : ResourceContainer {
+public extension Resource where Self : RawRepresentable, Self.RawValue == String, Self : ResourceContainer {
     var url : URL {
         return Self.url.appendingPathComponent(rawValue)
     }
 }
 
-struct TiledResources {
-    static let rootURL = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
+public struct TiledResources {
+    public static let rootURL = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
     
-    struct GenericTiledProject : ResourceContainer {
-        static var url : URL {
+    public struct GenericTiledProject : ResourceContainer {
+        public static var url : URL {
             return TiledResources.rootURL.appendingPathComponent("Generic Tiled Project")
         }
                 
-        static let projectFile : Resource = ResourceInstance(url: url.appendingPathComponent("Generic Tiled Project.tiled-project"))
-        static let objectTypesFile : Resource = ResourceInstance(url: url.appendingPathComponent("Object Types.xml"))
+        public static let projectFile : Resource = ResourceInstance(url: url.appendingPathComponent("Generic Tiled Project.tiled-project"))
+        public static let objectTypesFile : Resource = ResourceInstance(url: url.appendingPathComponent("Object Types.xml"))
         
-        enum Maps : String, CaseIterable, ResourceContainer, MapResource {
-            static var project: ResourceContainer.Type {
+        public enum Maps : String, CaseIterable, ResourceContainer, MapResource {
+            public static var project: ResourceContainer.Type {
                 return GenericTiledProject.self
             }
-            static var url : URL {
+            public static var url : URL {
                 return GenericTiledProject.url.appendingPathComponent("Maps")
             }
             case topDown2D = "2D Top Down.tmx", isometric = "Isometric.tmx", testMap1 = "Test Map 1.tmx", testMap2 = "Test Map 2.tmx"
             case oneOfEverything = "One of Everything.tmx"
         }
         
-        enum TileSets : String, CaseIterable, ResourceContainer, TileSetResource {
-            static var project: ResourceContainer.Type {
+        public enum TileSets : String, CaseIterable, ResourceContainer, TileSetResource {
+            public static var project: ResourceContainer.Type {
                 return GenericTiledProject.self
             }
             
-            static var url : URL {
+            public static var url : URL {
                 return GenericTiledProject.url.appendingPathComponent("TileSets")
             }
             case animation = "Animation.tsx", isometric="Isometric.tsx"
