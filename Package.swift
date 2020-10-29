@@ -23,7 +23,7 @@ let package = Package(
             dependencies: [],
             // Temporary solution whilst the defect causes tests to crash if you do this
             exclude: [
-                "Asset Sources","Generic Tiled Project",
+                "Asset Sources","Generic Tiled Project","SpriteKit"
             ]),
 //            resources: [
 //                .copy("Generic Tiled Project"),
