@@ -21,12 +21,13 @@ let package = Package(
         .target(
             name: "TiledResources",
             dependencies: [],
+            // Temporary solution whilst the defect causes tests to crash if you do this
             exclude: [
-                "Asset Sources",
-            ],
-            resources: [
-                .copy("Generic Tiled Project"),
+                "Asset Sources","Generic Tiled Project",
             ]),
+//            resources: [
+//                .copy("Generic Tiled Project"),
+//            ]),
         .testTarget(
             name: "TiledResourcesTests",
             dependencies: ["TiledResources"]),
