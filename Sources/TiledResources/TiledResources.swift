@@ -95,18 +95,18 @@ public struct TiledResources : StaticResourceContainer {
                 isometric, 
                 testCard16x16,
             ]
-            static let topDownMarginAndSpacing = ResourceInstance(url:Images.url.appendingPathComponent("2D Top Down - 2px Margin and Spacing.png"))
-            static let topDownMargin = ResourceInstance(url:Images.url.appendingPathComponent("2D Top Down - Margin 2.png"))
-            static let topDown = ResourceInstance(url:Images.url.appendingPathComponent("2D Top Down.png"))
-            static let a = ResourceInstance(url:Images.url.appendingPathComponent("A.png"))
-            static let b = ResourceInstance(url:Images.url.appendingPathComponent("B.png"))
-            static let c = ResourceInstance(url:Images.url.appendingPathComponent("C.png"))
-            static let d = ResourceInstance(url:Images.url.appendingPathComponent("D.png"))
-            static let e = ResourceInstance(url:Images.url.appendingPathComponent("E.png"))
-            static let f = ResourceInstance(url:Images.url.appendingPathComponent("F.png"))
-            static let animation = ResourceInstance(url:Images.url.appendingPathComponent("Animation.png"))
-            static let isometric = ResourceInstance(url:Images.url.appendingPathComponent("Isometric.png"))
-            static let testCard16x16 = ResourceInstance(url:Images.url.appendingPathComponent("Test Card 16x16.png"))
+            public static let topDownMarginAndSpacing = ResourceInstance(url:Images.url.appendingPathComponent("2D Top Down - 2px Margin and Spacing.png"))
+            public static let topDownMargin = ResourceInstance(url:Images.url.appendingPathComponent("2D Top Down - Margin 2.png"))
+            public static let topDown = ResourceInstance(url:Images.url.appendingPathComponent("2D Top Down.png"))
+            public static let a = ResourceInstance(url:Images.url.appendingPathComponent("A.png"))
+            public static let b = ResourceInstance(url:Images.url.appendingPathComponent("B.png"))
+            public static let c = ResourceInstance(url:Images.url.appendingPathComponent("C.png"))
+            public static let d = ResourceInstance(url:Images.url.appendingPathComponent("D.png"))
+            public static let e = ResourceInstance(url:Images.url.appendingPathComponent("E.png"))
+            public static let f = ResourceInstance(url:Images.url.appendingPathComponent("F.png"))
+            public static let animation = ResourceInstance(url:Images.url.appendingPathComponent("Animation.png"))
+            public static let isometric = ResourceInstance(url:Images.url.appendingPathComponent("Isometric.png"))
+            public static let testCard16x16 = ResourceInstance(url:Images.url.appendingPathComponent("Test Card 16x16.png"))
         }
         
         public struct Tilesets : StaticResourceContainer {
@@ -120,13 +120,13 @@ public struct TiledResources : StaticResourceContainer {
                 topDownMarginNoSpacing,
                 topDownMarginAndSpacing,
             ]
-            static let alphabet = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Alphabet.tsx"), project: GenericTiledProject())
-            static let animation = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Animation.tsx"), project: GenericTiledProject())
-            static let isometric = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Isometric.tsx"), project: GenericTiledProject())
-            static let singleTile = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Single Tile.tsx"), project: GenericTiledProject())
-            static let topDownNoMarginNoSpacing = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Top Down [Sheet M-0 S-0].tsx"), project: GenericTiledProject())
-            static let topDownMarginNoSpacing = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Top Down [Sheet M-2 S-0].tsx"), project: GenericTiledProject())
-            static let topDownMarginAndSpacing = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Top Down [Sheet M-2 S-2].tsx"), project: GenericTiledProject())
+            public static let alphabet = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Alphabet.tsx"), project: GenericTiledProject())
+            public static let animation = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Animation.tsx"), project: GenericTiledProject())
+            public static let isometric = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Isometric.tsx"), project: GenericTiledProject())
+            public static let singleTile = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Single Tile.tsx"), project: GenericTiledProject())
+            public static let topDownNoMarginNoSpacing = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Top Down [Sheet M-0 S-0].tsx"), project: GenericTiledProject())
+            public static let topDownMarginNoSpacing = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Top Down [Sheet M-2 S-0].tsx"), project: GenericTiledProject())
+            public static let topDownMarginAndSpacing = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Top Down [Sheet M-2 S-2].tsx"), project: GenericTiledProject())
         }
         
         public struct Maps : StaticResourceContainer {
@@ -142,15 +142,15 @@ public struct TiledResources : StaticResourceContainer {
                 testMap2,
                 testMap3,
             ]
-            static let topDown = ProjectResourceInstance(url:Maps.url.appendingPathComponent("2D Top Down.tmx"), project: GenericTiledProject())
-            static let base64 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Base64.tmx"), project: GenericTiledProject())
-            static let base64zlib = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Base64zlib.tmx"), project: GenericTiledProject())
-            static let base64standard = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Base64zstandard.tmx"), project: GenericTiledProject())
-            static let isometric = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Isometric.tmx"), project: GenericTiledProject())
-            static let oneOfEverything = ProjectResourceInstance(url:Maps.url.appendingPathComponent("One of Everything.tmx"), project: GenericTiledProject())
-            static let testMap1 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Test Map 1.tmx"), project: GenericTiledProject())
-            static let testMap2 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Test Map 2.tmx"), project: GenericTiledProject())
-            static let testMap3 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Test Map 3.tmx"), project: GenericTiledProject())
+            public static let topDown = ProjectResourceInstance(url:Maps.url.appendingPathComponent("2D Top Down.tmx"), project: GenericTiledProject())
+            public static let base64 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Base64.tmx"), project: GenericTiledProject())
+            public static let base64zlib = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Base64zlib.tmx"), project: GenericTiledProject())
+            public static let base64standard = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Base64zstandard.tmx"), project: GenericTiledProject())
+            public static let isometric = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Isometric.tmx"), project: GenericTiledProject())
+            public static let oneOfEverything = ProjectResourceInstance(url:Maps.url.appendingPathComponent("One of Everything.tmx"), project: GenericTiledProject())
+            public static let testMap1 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Test Map 1.tmx"), project: GenericTiledProject())
+            public static let testMap2 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Test Map 2.tmx"), project: GenericTiledProject())
+            public static let testMap3 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Test Map 3.tmx"), project: GenericTiledProject())
         }        
     }
     
@@ -173,7 +173,7 @@ public struct TiledResources : StaticResourceContainer {
                 dungeonTiles
             ]
             
-            static let dungeonTiles = ResourceInstance(url:Images.url.appendingPathComponent("DungeonTiles.png")) 
+            public static let dungeonTiles = ResourceInstance(url:Images.url.appendingPathComponent("DungeonTiles.png")) 
         }
         
         public struct Tilesets : StaticResourceContainer {
@@ -182,7 +182,7 @@ public struct TiledResources : StaticResourceContainer {
                 dungeon,
             ]            
             
-            static let dungeon = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Dungeon.tsx"), project: SpriteKit()) 
+            public static let dungeon = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Dungeon.tsx"), project: SpriteKit()) 
         }
         
         public struct Maps : StaticResourceContainer {
@@ -193,9 +193,9 @@ public struct TiledResources : StaticResourceContainer {
                 topDownScroller,
             ]            
             
-            static let lightTest = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Light Test.tmx"), project: SpriteKit()) 
-            static let readyPlayerOne = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Ready Player 1.tmx"), project: SpriteKit()) 
-            static let topDownScroller = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Top Down Scroller.tmx"), project: SpriteKit()) 
+            public static let lightTest = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Light Test.tmx"), project: SpriteKit()) 
+            public static let readyPlayerOne = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Ready Player 1.tmx"), project: SpriteKit()) 
+            public static let topDownScroller = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Top Down Scroller.tmx"), project: SpriteKit()) 
         }
     }
 }
