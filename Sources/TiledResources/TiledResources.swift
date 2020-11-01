@@ -234,39 +234,3 @@ extension ResourceContainer {
     }
 }
 
-
-
-#if canImport(TiledKit)
-import TiledKit
-
-public enum TiledResourcesError : Error {
-    case resourceIsNotAProjectResource(URL)
-}
-
-public extension Resource {
-    internal var asProjectResource : ProjectResource?  {
-        return self as? ProjectResource
-    }
-    func loadTileSet<O:TileSet>() throws -> O {
-        guard let projectResource = asProjectResource else {
-            throw TiledResourcesError.resourceIsNotAProjectResource(url)
-        }
-        return try Project(at: projectResource.project.url).retrieve(asType: O.self, from: url)
-    }
-
-    func loadMap() throws -> Map {
-        guard let projectResource = asProjectResource else {
-            throw TiledResourcesError.resourceIsNotAProjectResource(url)
-        }
-        return try Project(at: projectResource.project.url).retrieve(asType: Map.self, from: url)
-    }
-    
-    func loadMap<E:Engine>(for engine:E.Type) throws ->E.MapType {
-        guard let projectResource = asProjectResource else {
-            throw TiledResourcesError.resourceIsNotAProjectResource(url)
-        }
-        return try Project(at: projectResource.project.url).retrieve(asType: E.MapType.self, from: url)
-    }
-}
-
-#endif

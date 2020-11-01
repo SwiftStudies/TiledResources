@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="hexagonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" hexsidelength="8" staggeraxis="x" staggerindex="even" nextlayerid="3" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.2" orientation="hexagonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" hexsidelength="8" staggeraxis="x" staggerindex="even" nextlayerid="5" nextobjectid="13">
  <tileset firstgid="1" source="../Tilesets/Hexagonal - X Stagger.tsx"/>
  <layer id="1" name="Tile Layer 1" width="10" height="10">
   <data encoding="base64">
    AgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAMAAAACAAAAAwAAAAIAAAADAAAAAgAAAAIAAAACAAAAAwAAAAMAAAABAAAAAwAAAAEAAAADAAAAAQAAAAMAAAACAAAAAgAAAAMAAAABAAAABAAAAAEAAAAEAAAAAQAAAAEAAAADAAAAAgAAAAIAAAADAAAAAQAAAAQAAAAEAAAABAAAAAEAAAABAAAAAwAAAAIAAAACAAAAAwAAAAEAAAABAAAABAAAAAQAAAABAAAAAQAAAAMAAAACAAAAAgAAAAMAAAABAAAAAQAAAAEAAAABAAAAAQAAAAMAAAADAAAAAgAAAAIAAAACAAAAAwAAAAMAAAADAAAAAwAAAAMAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAA==
   </data>
  </layer>
+ <objectgroup id="3" name="X Even" visible="0" locked="1" tintcolor="#ff0000">
+  <object id="1" name="0,0" x="0" y="16">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="2" name="1,0" x="12" y="8">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="3" name="2,0" x="24" y="16">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="4" name="0,1" x="0" y="32.0625">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="5" name="1,1" x="12" y="24">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="6" name="2,1" x="24" y="32">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="X Odd" visible="0" tintcolor="#00ff00">
+  <object id="7" name="0,0" x="0" y="8">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="8" name="1,0" x="12" y="16">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="9" name="2,0" x="24" y="8">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="10" name="0,1" x="0" y="24">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="11" name="1,1" x="12" y="32">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+  <object id="12" name="2,1" x="24" y="24">
+   <polygon points="0,0 4,-8.08889 11.9778,-8.04444 16,-0.0888889 11.9778,7.93333 4,7.95556"/>
+  </object>
+ </objectgroup>
  <layer id="2" name="Tile Layer 2" width="10" height="10">
   <data encoding="base64">
    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAACgAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAoAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
