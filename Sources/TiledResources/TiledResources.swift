@@ -94,6 +94,8 @@ public struct TiledResources : StaticResourceContainer {
                 animation, 
                 isometric, 
                 testCard16x16,
+                hexStaggerX,
+                hexStaggerY,
             ]
             public static let topDownMarginAndSpacing = ResourceInstance(url:Images.url.appendingPathComponent("2D Top Down - 2px Margin and Spacing.png"))
             public static let topDownMargin = ResourceInstance(url:Images.url.appendingPathComponent("2D Top Down - Margin 2.png"))
@@ -107,6 +109,8 @@ public struct TiledResources : StaticResourceContainer {
             public static let animation = ResourceInstance(url:Images.url.appendingPathComponent("Animation.png"))
             public static let isometric = ResourceInstance(url:Images.url.appendingPathComponent("Isometric.png"))
             public static let testCard16x16 = ResourceInstance(url:Images.url.appendingPathComponent("Test Card 16x16.png"))
+            public static let hexStaggerX = ResourceInstance(url:Images.url.appendingPathComponent("Hex - X Stagger.png"))
+            public static let hexStaggerY = ResourceInstance(url:Images.url.appendingPathComponent("Hex - Y Stagger.png"))
         }
         
         public struct Tilesets : StaticResourceContainer {
@@ -119,6 +123,8 @@ public struct TiledResources : StaticResourceContainer {
                 topDownNoMarginNoSpacing, 
                 topDownMarginNoSpacing,
                 topDownMarginAndSpacing,
+                hexagonalXStagger,
+                hexagonalYStagger,
             ]
             public static let alphabet = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Alphabet.tsx"), project: GenericTiledProject())
             public static let animation = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Animation.tsx"), project: GenericTiledProject())
@@ -127,6 +133,9 @@ public struct TiledResources : StaticResourceContainer {
             public static let topDownNoMarginNoSpacing = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Top Down [Sheet M-0 S-0].tsx"), project: GenericTiledProject())
             public static let topDownMarginNoSpacing = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Top Down [Sheet M-2 S-0].tsx"), project: GenericTiledProject())
             public static let topDownMarginAndSpacing = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Top Down [Sheet M-2 S-2].tsx"), project: GenericTiledProject())
+            public static let hexagonalXStagger = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Hexagonal - X Stagger.tsx"), project: GenericTiledProject())
+            public static let hexagonalYStagger = ProjectResourceInstance(url:Tilesets.url.appendingPathComponent("Hexagonal - Y Stagger.tsx"), project: GenericTiledProject())
+
         }
         
         public struct Maps : StaticResourceContainer {
@@ -141,6 +150,10 @@ public struct TiledResources : StaticResourceContainer {
                 testMap1,
                 testMap2,
                 testMap3,
+                hexagonalXOddStagger,
+                hexagonalYOddStagger,
+                hexagonalXEvenStagger,
+                hexagonalYEvenStagger
             ]
             public static let topDown = ProjectResourceInstance(url:Maps.url.appendingPathComponent("2D Top Down.tmx"), project: GenericTiledProject())
             public static let base64 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Base64.tmx"), project: GenericTiledProject())
@@ -151,6 +164,10 @@ public struct TiledResources : StaticResourceContainer {
             public static let testMap1 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Test Map 1.tmx"), project: GenericTiledProject())
             public static let testMap2 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Test Map 2.tmx"), project: GenericTiledProject())
             public static let testMap3 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Test Map 3.tmx"), project: GenericTiledProject())
+            public static let hexagonalXOddStagger = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Hexagonal - X Odd.tmx"), project: GenericTiledProject())
+            public static let hexagonalXEvenStagger = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Hexagonal - X Even.tmx"), project: GenericTiledProject())
+            public static let hexagonalYOddStagger = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Hexagonal - Y Odd.tmx"), project: GenericTiledProject())
+            public static let hexagonalYEvenStagger = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Hexagonal - Y Even.tmx"), project: GenericTiledProject())
         }        
     }
     
