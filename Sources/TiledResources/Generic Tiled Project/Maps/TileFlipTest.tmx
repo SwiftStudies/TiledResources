@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="5" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="57">
+ <tileset firstgid="1" source="../Tilesets/Top Down [Sheet M-0 S-0].tsx"/>
+ <layer id="1" name="Tile Layer 1" width="5" height="9">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAgAAAAAAAAAAAAAAAAAAAAAAKAADgAAAAAAAAAAAAAAAAAAAAAAoAAMAAAAAAAAAAAAAAAAAAAAAACgAAYAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAoAAKAAAAAAAAAAAAAAAAAAAAAACgAAQAAAAAAAAAAAAAAAAAAAAAAKAAAg
+  </data>
+ </layer>
+ <objectgroup id="2" name="Headers">
+  <object id="4" x="-0.041132" y="0.101792" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">X</text>
+  </object>
+  <object id="5" x="15.7672" y="0.224949" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">Y</text>
+  </object>
+  <object id="6" x="31.9082" y="0.224949" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">D</text>
+  </object>
+  <object id="7" x="63.9671" y="-0.0837392" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">T</text>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Values">
+  <object id="10" x="-0.0221607" y="15.9335" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="13" x="0.348881" y="31.982" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="16" x="0.16335" y="48.1232" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="19" x="0.348881" y="64.0789" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="22" x="0.16335" y="80.0345" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="25" x="-0.0221607" y="96.083" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="26" x="0.16337" y="111.853" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="27" x="-0.0221607" y="127.994" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="37" x="16.2119" y="16.0728" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="38" x="16.0264" y="32.1213" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="43" x="15.8409" y="48.0308" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="44" x="16.0264" y="63.9865" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="45" x="16.1192" y="80.1046" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="46" x="15.9337" y="96.1531" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="47" x="15.7482" y="112.063" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="48" x="15.9337" y="128.018" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="49" x="31.9822" y="16.1423" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="50" x="31.7967" y="32.0518" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="51" x="31.9822" y="48.0539" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="52" x="31.7967" y="63.9634" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="53" x="31.9822" y="79.9654" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="54" x="31.7967" y="95.8749" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+  <object id="55" x="32.1677" y="111.877" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">0</text>
+  </object>
+  <object id="56" x="31.9822" y="127.786" width="16" height="16">
+   <text wrap="1" halign="center" valign="center">1</text>
+  </object>
+ </objectgroup>
+</map>

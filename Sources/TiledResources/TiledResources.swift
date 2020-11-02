@@ -153,7 +153,8 @@ public struct TiledResources : StaticResourceContainer {
                 hexagonalXOddStagger,
                 hexagonalYOddStagger,
                 hexagonalXEvenStagger,
-                hexagonalYEvenStagger
+                hexagonalYEvenStagger, 
+                tileFlipTest,
             ]
             public static let topDown = ProjectResourceInstance(url:Maps.url.appendingPathComponent("2D Top Down.tmx"), project: GenericTiledProject())
             public static let base64 = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Base64.tmx"), project: GenericTiledProject())
@@ -168,6 +169,7 @@ public struct TiledResources : StaticResourceContainer {
             public static let hexagonalXEvenStagger = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Hexagonal - X Even.tmx"), project: GenericTiledProject())
             public static let hexagonalYOddStagger = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Hexagonal - Y Odd.tmx"), project: GenericTiledProject())
             public static let hexagonalYEvenStagger = ProjectResourceInstance(url:Maps.url.appendingPathComponent("Hexagonal - Y Even.tmx"), project: GenericTiledProject())
+            public static let tileFlipTest = ProjectResourceInstance(url:Maps.url.appendingPathComponent("TileFlipTest.tmx"), project: GenericTiledProject())
         }        
     }
     
